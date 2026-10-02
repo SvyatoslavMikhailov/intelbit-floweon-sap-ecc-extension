@@ -32,7 +32,7 @@
 
 ## 4. Технический пользователь и права
 
-- Сервисный (тех.) пользователь типа SYSTEM/COMMUNICATION для Basic-аутентификации Реки.
+- Сервисный (тех.) пользователь типа SYSTEM/COMMUNICATION для Basic-аутентификации Фловеона.
 - Права `S_SERVICE` на 4 сервиса; `S_RFC` на нужные группы ФМ; объектные полномочия на
   ведение делового партнёра/контрагента (CMD_EI_API).
 - CSRF включён (POST требует `X-CSRF-Token: Fetch` → токен).
@@ -45,4 +45,4 @@
 ## Проверка контракта
 
 OData-ответы должны соответствовать `src/docs-contract/ODATA_CONTRACT.md` (синхронен с
-коннектором `intelbit-river-connector-sap`).
+коннектором `intelbit-floweon-connector-sap`).

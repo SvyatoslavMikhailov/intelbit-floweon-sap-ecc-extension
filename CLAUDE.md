@@ -1,12 +1,17 @@
-# CLAUDE.md — intelbit-river-sap-ecc-extension
+# CLAUDE.md — intelbit-floweon-sap-ecc-extension
 
 Гайд для Claude Code по этому репозиторию.
 
 ## Что это
 
-ABAP-сторона интеграции SAP ECC 6.0 EHP8 ↔ Интелбит:Река (Apache 2.0). Companion к
-Python-коннектору `intelbit-river-connector-sap`. Содержит **референс-скелеты**:
+ABAP-сторона интеграции SAP ECC 6.0 EHP8 ↔ Интелбит.Фловеон (Apache 2.0). Companion к
+Python-коннектору `intelbit-floweon-connector-sap`. Содержит **референс-скелеты**:
 CDS-вью чтения, SEGW OData-модель, Z-ФМ записи контрагента через CMD_EI_API.
+
+## Документация
+
+Проектная документация — Obsidian, папка `4 Мои проекты/4-17 Интелбит Фловеон/`;
+промпты — `04 Промпты для Claude Code/`, статус — `04 Промпты для Claude Code/Статус разработки.md`.
 
 ## Важно
 
@@ -14,7 +19,7 @@ CDS-вью чтения, SEGW OData-модель, Z-ФМ записи контр
   Это скелеты с сигнатурами и комментариями ключевых шагов.
 - ABAP в CI **не компилируется** (GH-раннер не собирает ABAP). CI — только markdown-lint.
 - Канонический OData-контракт — `src/docs-contract/ODATA_CONTRACT.md`. Он **должен быть
-  синхронен** с `docs/ODATA_CONTRACT.md` коннектора `intelbit-river-connector-sap`.
+  синхронен** с `docs/ODATA_CONTRACT.md` коннектора `intelbit-floweon-connector-sap`.
 - Имена полей/таблиц ECC-специфичны (KNA1/MARA/KONP/MARD, CMD_EI_API) — это намеренно,
   версионная специфика инкапсулирована здесь.
 

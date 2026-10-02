@@ -1,11 +1,15 @@
-# intelbit-river-sap-ecc-extension
+# intelbit-floweon-sap-ecc-extension
 
-**ABAP-сторона** интеграции SAP ECC 6.0 EHP8 ↔ **Интелбит:Река**: CDS-вью чтения + SEGW
+**ABAP-сторона** интеграции SAP ECC 6.0 EHP8 ↔ **Интелбит.Фловеон**: CDS-вью чтения + SEGW
 OData-сервисы + Z-функция записи контрагента через `CMD_EI_API`. Apache 2.0.
 
 Companion к Python-коннектору
-[`intelbit-river-connector-sap`](https://github.com/SvyatoslavMikhailov/intelbit-river-connector-sap):
+[`intelbit-floweon-connector-sap`](https://github.com/SvyatoslavMikhailov/intelbit-floweon-connector-sap):
 коннектор говорит по OData с сервисами, которые определяет это расширение.
+
+**Исторические имена объектов.** SQL-имена CDS-вью `ZRIVERMATV` / `ZRIVERPRCV` / `ZRIVERSTKV`
+(`@AbapCatalog.sqlViewName`) — исторические (прежнее имя продукта — Интелбит:Река). ABAP-объекты
+не переименовываются до импорта в систему SAP; в документации они указаны как есть.
 
 > **Статус: скелеты v0.1.0.** Референс-объекты с сигнатурами и комментариями ключевых шагов.
 > Реальная бизнес-логика ABAP (особенно маппинг `CMD_EI_API`) дописывается **после уточнения
@@ -30,5 +34,5 @@ docs/  INSTALL.md (импорт в SAP, активация, транспорты
 ## Почему «ecc» в имени
 
 Содержимое ECC-специфично (`CMD_EI_API`, таблицы KNA1/MARA/KONP/MARD). Коннектор остаётся
-generic (`intelbit-river-connector-sap`) и переиспользуем; версионная специфика SAP
+generic (`intelbit-floweon-connector-sap`) и переиспользуем; версионная специфика SAP
 инкапсулирована здесь. Для S/4HANA — отдельный extension-репозиторий со своим контрактом.
