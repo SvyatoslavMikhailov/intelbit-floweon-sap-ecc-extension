@@ -25,7 +25,7 @@ CDS-вью чтения, SEGW OData-модель, Z-ФМ записи контр
 
 ## Структура
 
-- `src/cds/*.asddls` — CDS DDL чтения (ZMAT/ZPRICE/ZSTOCK).
+- `src/cds/*.asddls` — CDS DDL чтения (ZMAT/ZPRICE/ZSTOCK, «текущий материал» ZFLW_CURMAT_*/ZCURMAT).
 - `src/segw/` — модель ZCUST_SRV + DPC_EXT (create_entity → Z-ФМ).
 - `src/fm/` — Z_CUSTOMER_CREATE_VIA_ODATA (скелет CMD_EI_API + дедуп по ИНН/КПП).
 - `docs/` — INSTALL (импорт в SAP), SECURITY.
